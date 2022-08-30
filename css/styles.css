@@ -135,10 +135,24 @@ body {
 
 .hero {
   text-align: center;
-  background-color: #2f303a;
-  /*  */
+  max-width: 1600px;
+  height: 600px;
+
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -183,9 +197,29 @@ body {
   gap: 30px;
 }
 
-.advantages-list-item {
-  min-width: 270px;
-  height: 98px;
+.advantages-sub-title::before {
+  content: "";
+  display: block;
+
+  height: 120px;
+  background-color: var(--secondary-background-color);
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-bottom: 30px;
+}
+.advantages-sub-title.details::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+.advantages-sub-title.punctuality::before {
+  background-image: url(../images/icon/clock.svg);
+}
+.advantages-sub-title.planning::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+.advantages-sub-title.technology::before {
+  background-image: url(../images/icon/astronaut.svg);
 }
 
 .advantages-sub-title {
@@ -231,7 +265,7 @@ body {
 }
 .team-list-item {
   width: 270px;
-  height: 368px;
+  height: 428px;
 
   background: #ffffff;
 
@@ -256,9 +290,26 @@ body {
   font-weight: normal;
   line-height: 1.16;
 
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
+/* .team .social-network {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+} */
+/* .social-network .instagram {
+  background-image: url(../images/social-network/instagram.svg);
+}
+.social-network .twitter {
+  background-image: url(../images/social-network/twitter.svg);
+}
+.social-network .facebook {
+  background-image: url(../images/social-network/facebook.svg);
+}
+.social-network .linkedin {
+  background-image: url(../images/social-network/linkedin.svg);
+} */
 /* footer */
 .footer {
   background-color: #2f303a;
