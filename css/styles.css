@@ -1,0 +1,376 @@
+/* custom properties */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --activation-color: #2196f3;
+  --white-text-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-color-bg: #2f303a;
+  --block-spacing: 94px;
+}
+/* utilities */
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.hide-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* page */
+body {
+  color: var(--primary-text-color);
+  background-color: rgba(255, 255, 255, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+/* container */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* main navi */
+.main-nav {
+  display: flex;
+}
+/* logo */
+.logo {
+  display: block;
+  color: var(--activation-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  margin-right: 93px;
+}
+
+.logo-head {
+  color: rgba(33, 33, 33, 1);
+}
+.nav-item {
+  display: block;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--activation-color);
+}
+.current {
+  color: var(--activation-color);
+}
+.main-nav nav {
+  margin-right: auto;
+}
+.site-nav {
+  display: flex;
+
+  gap: 50px;
+}
+/* auth-nav */
+.auth-nav {
+  display: flex;
+  gap: 50px;
+}
+.auth-contact {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* hero */
+
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  /*  */
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 30px;
+}
+.hero-btn {
+  display: flex;
+  color: var(--white-text-color);
+  background-color: var(--activation-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 32px;
+  min-width: 216px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+/* advantages */
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages-list-item {
+  min-width: 270px;
+  height: 98px;
+}
+
+.advantages-sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* adv-text пропадает контент ???? */
+.advantages-text {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+  font-weight: normal;
+}
+/* work */
+.section.work {
+  padding-top: 0;
+}
+
+.title-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* team */
+.team {
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-list-item {
+  width: 270px;
+  height: 368px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.team-sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+
+  margin-bottom: 10px;
+}
+
+.team-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.16;
+
+  margin-bottom: 30px;
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.font-style {
+  font-style: normal;
+}
+
+/* logo */
+.logo-footer-start {
+  display: block;
+  color: var(--activation-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-bottom: 20px;
+}
+
+.logo-footer-end {
+  color: rgba(255, 255, 255, 1);
+}
+
+.item-footer {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 9px;
+
+  /* Или использовать padding ??? */
+}
+
+.item-footer:focus,
+.item-footer:hover {
+  color: var(--activation-color);
+}
+.adress-color {
+  color: var(--white-text-color);
+}
+
+.item-footer:last-child {
+  margin-bottom: 0;
+}
+
+/* Portfolio */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+  /* margin-bottom: 34px; */
+}
+
+.filter-list .button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: 1px solid transparent;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+}
+
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--activation-color);
+}
+/* cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cards-border {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.card-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+.card-item-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: normal;
+}
