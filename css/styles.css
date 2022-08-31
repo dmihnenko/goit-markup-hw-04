@@ -4,9 +4,11 @@
   --secondary-text-color: #757575;
   --activation-color: #2196f3;
   --white-text-color: #ffffff;
+  --white-bcg-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-color-bg: #2f303a;
   --block-spacing: 94px;
+  --social-icon-color: #afb1b8;
 }
 /* utilities */
 ul {
@@ -130,8 +132,35 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.contant-link {
+  display: flex;
+  align-items: center;
+}
 
-/* hero */
+.contant-link:hover,
+.contant-link:focus {
+  color: var(--activation-color);
+}
+
+.mail-svg {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.tel-svg {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
+.contant-link:hover .tel-svg,
+.contant-link:focus .tel-svg,
+.contant-link:hover .mail-svg,
+.contant-link:focus .mail-svg {
+  fill: var(--activation-color);
+}
+/*=============================================
+=            HERO            =
+=============================================*/
 
 .hero {
   text-align: center;
@@ -190,7 +219,12 @@ body {
 
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
-/* advantages */
+
+/*=====  End of Hero  ======*/
+
+/*=============================================
+=            Advantages            =
+=============================================*/
 
 .advantages-list {
   display: flex;
@@ -235,7 +269,13 @@ body {
   line-height: 1.71;
   font-weight: normal;
 }
-/* work */
+
+/*=====  End of advantages  ======*/
+
+/*=============================================
+=            Work            =
+=============================================*/
+
 .section.work {
   padding-top: 0;
 }
@@ -253,7 +293,12 @@ body {
   gap: 30px;
 }
 
-/* team */
+/*=====  End of work  ======*/
+
+/*=============================================
+=            Team            =
+=============================================*/
+
 .team {
   text-align: center;
   background-color: var(--secondary-background-color);
@@ -290,32 +335,46 @@ body {
   font-weight: normal;
   line-height: 1.16;
 
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-/* .team .social-link {
-  display: inline-flex;
+/* social-link */
+.social {
+  display: flex;
   gap: 10px;
+  justify-content: center;
+
+  padding-bottom: 30px;
 }
-.social-link .item-link {
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item-link .instagram {
-  background-image: url(../images/social-network/instagram.svg);
-}
-.item-link .twitter {
-  background-image: url(../images/social-network/twitter.svg);
-}
-.item-link .facebook {
-  background-image: url(../images/social-network/facebook.svg);
-}
-.item-link .linkedin {
-  background-image: url(../images/social-network/linkedin.svg);
-} */
 
-/* .footer  */
+  background-color: var(--white-bcg-color);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: var(--social-icon-color);
+}
+.social-link:hover {
+  background-color: var(--activation-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-bcg-color);
+}
+
+/*=====  End of team  ======*/
+
+/*=============================================
+=            Footer            =
+=============================================*/
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -366,15 +425,18 @@ body {
 .item-footer:last-child {
   margin-bottom: 0;
 }
+/*=====  End of footer  ======*/
 
-/* Portfolio */
+/*=============================================
+=            Portfolio            =
+=============================================*/
 
+/*----------  filter  ----------*/
 .filter-list {
   display: flex;
   justify-content: center;
 
   margin-bottom: 50px;
-  /* margin-bottom: 34px; */
 }
 
 .filter-list .button {
@@ -398,7 +460,9 @@ body {
   color: var(--white-text-color);
   background-color: var(--activation-color);
 }
-/* cards */
+/*----------  filter end  ----------*/
+
+/*----------  cards start  ----------*/
 
 .cards {
   display: flex;
@@ -430,3 +494,5 @@ body {
   line-height: 1.88;
   font-weight: normal;
 }
+
+/*----------  cards end  ----------*/
