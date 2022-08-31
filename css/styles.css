@@ -290,27 +290,32 @@ body {
   font-weight: normal;
   line-height: 1.16;
 
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
-
-/* .team .social-network {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-} */
-/* .social-network .instagram {
+.team .social-link {
+  display: inline-flex;
+  gap: 10px;
+}
+.social-link .item {
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item.instagram {
   background-image: url(../images/social-network/instagram.svg);
 }
-.social-network .twitter {
+.item.twitter {
   background-image: url(../images/social-network/twitter.svg);
 }
-.social-network .facebook {
+.item.facebook {
   background-image: url(../images/social-network/facebook.svg);
 }
-.social-network .linkedin {
+.item.linkedin {
   background-image: url(../images/social-network/linkedin.svg);
-} */
-/* footer */
+}
+
+/* .footer  */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
