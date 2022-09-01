@@ -472,6 +472,50 @@ body {
 .item-footer:last-child {
   margin-bottom: 0;
 }
+.footer-position {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-social-titile {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-item .social-icon {
+  fill: var(--white-text-color);
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: var(--activation-color);
+}
+
 /*=====  End of footer  ======*/
 
 /*=============================================
